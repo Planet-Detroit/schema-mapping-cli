@@ -6,7 +6,7 @@ import path from 'path';
 import fs, { existsSync } from 'fs';
 import crypto from 'crypto';
 import { AppConfig } from './types.js';
-import { deriveDatabasePath } from '../database/index.js';
+import { deriveDatabasePath } from '../database/paths.js';
 
 /**
  * Normalize configuration to use dataPaths array

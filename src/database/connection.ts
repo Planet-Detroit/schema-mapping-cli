@@ -171,8 +171,4 @@ export class DatabaseConnection {
 /**
  * Derive database path from output path
  */
-export function deriveDatabasePath(outputPath: string): string {
-  const dir = path.dirname(outputPath);
-  const basename = path.basename(outputPath, path.extname(outputPath));
-  return path.join(dir, `${basename}.db`);
-}
+export { deriveDatabasePath } from './paths.js';
