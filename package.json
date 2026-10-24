@@ -13,7 +13,8 @@
     "test:coverage": "vitest --coverage",
     "vendor:sync": "node scripts/sync-vendor-taxonomies.mjs",
     "vendor:check": "node scripts/sync-vendor-taxonomies.mjs --check",
-    "prepack": "npm run vendor:check"
+    "prepack": "npm run vendor:check",
+    "prepare": "npm run build"
   },
   "bin": {
     "npa-insight": "./dist/cli.js"
